@@ -1,0 +1,1 @@
+export { RandomUserCard } from './Card';

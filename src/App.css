@@ -1,3 +1,48 @@
 .App {
   text-align: center;
+  box-sizing: border-box;
+}
+
+.random-user-card-container {
+  margin: 2.5%;
+  padding: 2.5%;
+  border: #253C78 solid 3px;
+  border-radius: 9px;
+  background-color: #FFEECF;
+}
+
+.random-user-card-image {
+  border-radius: 50%;
+}
+
+.random-user-card-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.random-user-card-navigation i {
+  font-size: 2em;
+  background-color: #F1FFE7;
+  color: #D36582;
+  padding: 21px;
+  border-radius: 50%;
+  border-bottom: transparent solid 3px;
+  border-top: transparent solid 3px;
+  transition: all .75s ease-out;
+}
+
+.random-user-card-navigation.user i.fa-user-circle,
+.random-user-card-navigation.email i.fa-envelope,
+.random-user-card-navigation.dob i.fa-calendar-alt,
+.random-user-card-navigation.address i.fa-map-marked-alt,
+.random-user-card-navigation.phone i.fa-phone,
+.random-user-card-navigation.password i.fa-unlock-alt,
+.random-user-card-navigation i:hover {
+  cursor: pointer;
+  background-color: #FFEECF;
+  color: #2B59C3;
+  border-bottom: #D36582 solid 3px;
+  border-top: #2B59C3 solid 3px;
 }
