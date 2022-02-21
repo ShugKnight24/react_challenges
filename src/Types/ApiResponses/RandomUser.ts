@@ -1,5 +1,5 @@
 export interface RandomUserResponse {
-	results?: Result[];
+	results?: RandomUser[];
 	info?: Info;
 }
 
@@ -10,7 +10,7 @@ export interface Info {
 	version?: string;
 }
 
-export interface Result {
+export interface RandomUser {
 	gender?: string;
 	name?: Name;
 	location?: Location;
@@ -36,12 +36,17 @@ export interface ID {
 }
 
 export interface Location {
-	street?: string;
+	street?: Street;
 	city?: string;
 	state?: string;
 	postcode?: string;
 	coordinates?: Coordinates;
 	timezone?: Timezone;
+}
+
+export interface Street {
+	name?: string;
+	number?: number;
 }
 
 export interface Coordinates {
